@@ -1,5 +1,5 @@
 //////////////////////////
-////// Logo
+////// Header
 
 .logo {
   height: 3.25rem;
@@ -116,6 +116,9 @@
   }
 }
 
+//////////////////////////
+////// Side Bar
+
 .side-nav {
   font-size: 1.4rem;
   list-style: none;
@@ -217,6 +220,9 @@
   }
 }
 
+//////////////////////////
+////// Gallery
+
 .gallery {
   display: flex;
 
@@ -225,6 +231,9 @@
     display: block;
   }
 }
+
+//////////////////////////
+////// Overview
 
 .overview {
   display: flex;
@@ -303,57 +312,8 @@
   }
 }
 
-.btn-inline {
-  display: inline-block;
-  border: none;
-  background-color: transparent;
-  font-size: inherit;
-  color: var(--color-primary);
-  border-bottom: 1px solid currentColor;
-  cursor: pointer;
-  transition: background-color 0.2s;
-  align-self: center;
-
-  & span {
-    margin-left: 0.3rem;
-    transition: all 0.2s;
-  }
-
-  &:hover {
-    color: var(--color-grey-dark-1);
-
-    & span {
-      margin-left: 0.8rem;
-    }
-  }
-
-  &:focus {
-    animation: pulsate 1s infinite;
-  }
-}
-
-@keyframes pulsate {
-  0% {
-    transform: scale(1);
-    box-shadow: none;
-  }
-
-  50% {
-    transform: scale(1.1);
-    box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.25);
-  }
-
-  100% {
-    transform: scale(1);
-    box-shadow: none;
-  }
-}
-
-.paragraph {
-  &:not(:last-of-type) {
-    margin-bottom: 2rem;
-  }
-}
+//////////////////////////
+////// List
 
 .list {
   list-style: none;
@@ -385,6 +345,9 @@
   }
 }
 
+//////////////////////////
+////// Recommendations
+
 .recommendations {
   display: flex;
   align-items: center;
@@ -408,6 +371,9 @@
     }
   }
 }
+
+//////////////////////////
+////// Reviews
 
 .review {
   padding: 3rem;
@@ -459,6 +425,9 @@
   }
 }
 
+//////////////////////////
+////// CTA
+
 .cta {
   padding: 3rem;
   text-align: center;
@@ -474,6 +443,9 @@
     }
   }
 }
+
+//////////////////////////
+////// Primary button
 
 .btn {
   position: relative;
@@ -533,5 +505,63 @@
   &:focus {
     outline: none;
     animation: pulsate 1s infinite;
+  }
+}
+
+//////////////////////////
+////// secondary Button
+
+.btn-inline {
+  display: inline-block;
+  border: none;
+  background-color: transparent;
+  font-size: inherit;
+  color: var(--color-primary);
+  border-bottom: 1px solid currentColor;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  align-self: center;
+
+  & span {
+    margin-left: 0.3rem;
+    transition: all 0.2s;
+  }
+
+  &:hover {
+    color: var(--color-grey-dark-1);
+
+    & span {
+      margin-left: 0.8rem;
+    }
+  }
+
+  &:focus {
+    animation: pulsate 1s infinite;
+  }
+}
+
+@keyframes pulsate {
+  0% {
+    transform: scale(1);
+    box-shadow: none;
+  }
+
+  50% {
+    transform: scale(1.1);
+    box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.25);
+  }
+
+  100% {
+    transform: scale(1);
+    box-shadow: none;
+  }
+}
+
+//////////////////////////
+////// Paragraph
+
+.paragraph {
+  &:not(:last-of-type) {
+    margin-bottom: 2rem;
   }
 }
