@@ -28,6 +28,14 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+
+  @media (max-width: 750px) {
+    font-size: 56.25%;
+  }
+
+  @media (max-width: 500px) {
+    font-size: 50%;
+  }
 }
 
 body {
