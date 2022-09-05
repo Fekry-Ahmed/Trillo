@@ -54,6 +54,11 @@
     padding: 3rem;
     gap: 3rem;
   }
+
+  @media (max-width: 550px) {
+    padding: 2.5rem;
+    gap: 2.5rem;
+  }
 }
 
 .description-section {
@@ -61,6 +66,10 @@
   background-color: #fff;
   box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.06);
   padding: 3rem;
+
+  @media (max-width: 550px) {
+    padding: 2.25rem;
+  }
 }
 
 .users-reviews {
